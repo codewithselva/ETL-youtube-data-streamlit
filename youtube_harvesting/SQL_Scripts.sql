@@ -1,3 +1,5 @@
+CREATE DATABASE youtube_harvesting
+
 --Channel - table creation
 
 CREATE TABLE `youtube_harvesting`.`channel` (
