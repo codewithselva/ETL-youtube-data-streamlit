@@ -19,7 +19,7 @@ Additionally, you need to obtain a YouTube API key and provide it in the script.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/codewithselva/data_science.git
    ```
 
 2. Install the required dependencies:
@@ -45,7 +45,7 @@ Additionally, you need to obtain a YouTube API key and provide it in the script.
 6. Run the script:
 
    ```bash
-   streamlit run your_script_name.py
+   streamlit run youtube_harvesting.py
    ```
 
 ## Usage
@@ -65,5 +65,3 @@ Additionally, you need to obtain a YouTube API key and provide it in the script.
 This script is provided as-is and may require modifications based on your specific use case or changes in the YouTube API.
 
 ---
-
-**Disclaimer:** Replace "yourusername" and "your-repository" with your GitHub username and repository name. Update the script name accordingly.
