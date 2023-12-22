@@ -25,7 +25,7 @@ Additionally, you need to obtain a YouTube API key and provide it in the script.
 2. Install the required dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r Requirements.txt
    ```
 
 3. Set up MongoDB:
