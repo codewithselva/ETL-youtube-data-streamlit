@@ -12,9 +12,9 @@ from mysql.connector import errorcode
 
 # Configure logging
 log_file = "youtube_harvesting.log"
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 file_handler = RotatingFileHandler(log_file, maxBytes=50*1024*1024, backupCount=2)
-file_handler.setLevel(logging.INFO)
+file_handler.setLevel(logging.DEBUG)
 file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(file_formatter)
 logger = logging.getLogger(__name__)
@@ -458,12 +458,21 @@ def connect_to_sql():
     db = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Summer1$",
+        password="password",
         database='youtube_harvesting'
     )
     return db
 
 def main():
+
+    # Set the background color of the entire application
+    st.set_page_config(
+        page_title="Youtube Data Harvesting",
+        page_icon="🌐",  # You can change this to your preferred icon
+        layout="wide",
+        initial_sidebar_state="expanded",
+    )
+    
     st.title(":blue[Youtube Data Harvesting]")
     st.header("Extract data from Youtube")
     db = client["youtube"]
