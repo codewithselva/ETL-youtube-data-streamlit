@@ -1,6 +1,0 @@
-pymongo
-mysql-connector-python
-pandas
-google-api-python-client
-isodate
-streamlit
